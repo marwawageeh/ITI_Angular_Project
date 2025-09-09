@@ -1,0 +1,24 @@
+.nav-tabs .nav-link {
+    border: none;
+    color: #333;
+  }
+
+  .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+  }
+
+  .nav-tabs .nav-link:hover {
+    border-bottom: 2px solid #aaa;
+  }
+.custom-tab {
+  color: #000;            /* لون النص */
+  text-decoration: none;  /* الغي أي خط افتراضي */
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.custom-tab.active {
+  border-bottom: 2px solid black;  /* الخط اللي تحت العنصر النشط */
+  font-weight: bold;               /* ممكن تخلي النص أسمك */
+}

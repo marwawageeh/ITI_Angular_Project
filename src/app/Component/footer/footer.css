@@ -1,0 +1,16 @@
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+  footer h6 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }

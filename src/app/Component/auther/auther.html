@@ -1,0 +1,13 @@
+<div class="m-5 row justify-content-center g-4 mt-0">
+  <h2 class="text-center">Posts by {{authorName}}</h2>
+  @for(post of authorPosts; track post.id) {
+    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <img [src]="post.img" class="card-img-top" alt="...">
+        <div class="card-body mt-3">
+          <h5 class="card-title w-75  text-uppercase">{{ post.title }}</h5>
+          <p class="card-text m-2 text-uppercase">{{ post.body }}</p>
+        </div>
+    </div>
+  }
+</div>
+

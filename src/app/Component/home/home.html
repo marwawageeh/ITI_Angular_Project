@@ -1,0 +1,86 @@
+<div class="row justify-content-center g-4 m-5 mt-0 ">
+
+@for(l of latestlist.slice(0,1) ; track l.id){
+  <div class="col-lg-12 col-md-12 col-sm-12 mt-5 row" style=" border:none;">
+  <div class="col-lg-6 col-md-8 col-sm-12 m-3">
+    <img [src]="l.img" class="card-img-top img01 fade-in" alt="...">
+  </div>
+  <div class="card-body mt-3 col-lg-4 col-md-4 col-sm-12 m-5">
+    <p class="card-text text-uppercase stretched-link" [routerLink]="['/category', l.title]" style="color: gray;">
+     {{l.title}}
+    </p>
+    <h5 class="card-title w-75 text-uppercase m-4" style="font-size: 40px;">{{l.body}}</h5>
+    <p class="card-text text-uppercase m-4 w-75" style="color: gray;">Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam accusata, hinc justo falli id eum, ferri novum molestie eos cu.</p>
+    <p [routerLink]="['/author', l.Auther]" class="card-text m-2 text-uppercase" style="font-size: 13px;cursor: pointer; color: black; text-decoration: underline;">BY {{l.Auther}}</p>
+  </div>
+  </div>
+}
+
+@for(l of latestlist.slice(1,7) ; track l.id){
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img [src]="l.img" class="card-img-top img01" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase stretched-link" [routerLink]="['/category', l.title]" style="color: gray;">
+     {{l.title}}
+    </p>
+    <h5 class="card-title w-75 text-uppercase">{{l.body}}</h5>
+    <p [routerLink]="['/author', l.Auther]" class="card-text m-2 text-uppercase" style="font-size: 13px;cursor: pointer; color: black; text-decoration: underline;">BY {{l.Auther}}</p>
+  </div>
+  </div>
+}
+
+</div>
+
+
+<hr class="m-5 col-lg-10 col-md-10 col-sm-12 p-2">
+
+
+<div class="row justify-content-center g-4 m-5 mt-0">
+
+<h6 style="color: gray;">Latest Posts</h6>
+
+@for(l of latestlist.slice(0,8) ; track l.id){
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img [src]="l.img" class="card-img-top img01" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase stretched-link" [routerLink]="['/category', l.title]" style="color: gray;">
+     {{l.title}}
+    </p>
+    <h5 class="card-title w-75 text-uppercase">{{l.body}}</h5>
+    <p [routerLink]="['/author', l.Auther]" class="card-text m-2 text-uppercase" style="font-size: 13px;cursor: pointer; color: black; text-decoration: underline;">BY {{l.Auther}}</p>
+  </div>
+  </div>
+}
+
+  <div class="col-lg-12 col-md-12 col-sm-12 mt-5 m-5">
+    <a routerLink="/latest" style="margin: 500px;"><button type="button" class="btn btn-outline-dark " >VIEW ALL LATEST POSTS</button></a>
+  </div>
+
+</div>
+
+
+<hr class="m-5 col-lg-10 col-md-10 col-sm-12 p-2">
+
+
+
+<div class="row justify-content-center g-4 m-5 mt-0">
+
+<h6 style="color: gray;">featured POSTS</h6>
+
+@for(l of latestlist.slice(12).reverse() ; track l.id){
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img [src]="l.img" class="card-img-top img01" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase stretched-link" [routerLink]="['/category', l.title]" style="color: gray;">
+     {{l.title}}
+    </p>
+    <h5 class="card-title w-75 text-uppercase">{{l.body}}</h5>
+    <p [routerLink]="['/author', l.Auther]" class="card-text m-2 text-uppercase" style="font-size: 13px;cursor: pointer; color: black; text-decoration: underline;">BY {{l.Auther}}</p>
+  </div>
+  </div>
+}
+
+</div>
+
+
+

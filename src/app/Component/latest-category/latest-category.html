@@ -1,0 +1,17 @@
+<div class="m-5 row justify-content-center g-4 mt-0">
+
+<h2 class="mb-4">Posts in "{{ title }}"</h2>
+
+  @for (l of filteredList; track l.id) {
+    <div class="col-lg-4 col-md-6 col-sm-12 mt-3" style=" border:none;">
+        <img [src]="l.img" class="card-img-top" alt="...">
+        <div class="card-body mt-3">
+          <p class="card-text text-uppercase" style="color: gray;">{{ l.title }}</p>
+          <h5 class="card-title w-75 text-uppercase">{{ l.body }}</h5>
+          <p class="card-text m-2 text-uppercase" style="font-size: 13px;">BY {{ l.Auther }}</p>
+        </div>
+    </div>
+  }
+
+</div>
+

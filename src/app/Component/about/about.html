@@ -1,0 +1,137 @@
+<div class="row">
+
+<div style="padding: 5rem 2rem;" class="m-5 col-lg-12 col-md-12 col-sm-12">
+  <p style="color: #6c757d; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">About</p>
+  <div class="col-lg-12 col-md-12 col-sm-12" style="max-width: 1000px;text-transform: uppercase; font-size: 70px;font-family: 'Didot', serif; font-weight: 400; line-height: 1.2;">
+    <span>Clita incorrupte at vix. Nam te molestie iudicabit erroribus odio.</span>
+  </div>
+</div>
+
+
+<div class="m-1 col-lg-12 col-md-12 col-sm-12">
+  <img src="about01.png" class="img-fluid" alt="...">
+</div>
+
+<div class="m-5 col-lg-7 col-md-8 col-sm-12">
+<h4 class="p-2" style="text-transform: uppercase;">this is noiceland.</h4>
+<p class="p-2">
+Vim et dolore eligendi voluptua, qui id unum quas omittantur, at sed justo tation eligendi. Assum accommodare an mei. Sonet propriae partiendo ad vix, ex vis epicuri constituto incorrupte. Ut vim liber recteque eloquentiam, qui te exerci forensibus. Eu pri ullum meliore tincidunt, an ius aeque paulo saperet, eum modus tation an.
+</p>
+<p class="p-2">
+Vix mandamus deseruisse voluptatibus in. Ei pri epicurei indoctum. Aeterno oportere at his. Nam prompta recteque dissentias id. Aperiam atomorum iudicabit sed id, malis dicit pericula at vis.
+</p>
+<p class="p-2">
+At sea scripta nostrud facilisis, his at nihil ubique sententiae, aeque menandri urbanitas eu quo. Fastidii qualisque cum id. Tollit convenire adversarium duo te. Te vim dictas virtute iudicabit, tibique omittam cum ut, clita decore lucilius nec ei. Sit facer docendi ex, laoreet deserunt pro eu, eum putent virtute vivendum te. Purto interpretaris signiferumque te eam, at mel saperet voluptua.
+</p>
+<a routerLink="/contact" class="p-2 contact" >Contact US</a>
+
+</div>
+
+
+<hr class="m-5 col-lg-10 col-md-10 col-sm-12 p-2">
+
+
+<div class="m-5 col-lg-12 col-md-12 col-sm-12 row">
+  <h4 style="text-transform: uppercase;">OUR TEAM</h4>
+  @for (p of posts; track p.id; let i = $index) {
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style="border:none;">
+      <img [src]="'A0' + (i + 1) + '.png'" class="card-img-top" alt="...">
+      <div class="card-body mt-3">
+        <h5 class="card-title">{{ p.title }}</h5>
+        <p class="card-text" style="color: gray;">{{ p.body }}</p>
+      </div>
+    </div>
+  }
+
+  <!-- <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A01.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Simeon Peterson</h5>
+    <p class="card-text" style="color: gray;">Cofounder, Editor in Chief</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style="border:none;">
+  <img src="A02.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Simeon Brekke</h5>
+    <p class="card-text" style="color: gray;">Cofounder, Partner</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style="border:none;">
+  <img src="A03.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Annie Lueilwitz</h5>
+    <p class="card-text" style="color: gray;">Managing Editor</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A04.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Reta Torphy</h5>
+    <p class="card-text" style="color: gray;">Managing Editor</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A05.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Leo Bartell</h5>
+    <p class="card-text" style="color: gray;">Editor</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A06.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Clem Onojeghuo</h5>
+    <p class="card-text" style="color: gray;">Senior Writer</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A07.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Michal Legros</h5>
+    <p class="card-text" style="color: gray;">Senior Writer</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A08.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Rosanna Ondricka</h5>
+    <p class="card-text" style="color: gray;">Writer</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A09.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Alessandra Ortiz</h5>
+    <p class="card-text" style="color: gray;">Writer</p>
+  </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="A010.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <h5 class="card-title">Coby Gottlieb</h5>
+    <p class="card-text" style="color: gray;">Writer</p>
+  </div>
+  </div> -->
+
+<hr class="m-5 col-lg-10 col-md-10 col-sm-12 p-1 ">
+
+</div>
+
+<app-contact></app-contact>
+
+
+</div>
+
+
+
+

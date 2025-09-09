@@ -1,0 +1,17 @@
+.contact{
+  color: black;
+  font-size: 12px;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }

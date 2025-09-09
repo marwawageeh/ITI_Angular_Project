@@ -1,0 +1,168 @@
+<div class="row justify-content-center g-4 m-5 mt-0">
+
+<h1>Latest Posts</h1>
+
+@for(l of latestlist ; track l.id){
+<div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img [src]="l.img" class="card-img-top" alt="..."
+    [routerLink]="['/latest', l.id]" style="cursor:pointer;">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase stretched-link" [routerLink]="['/category', l.title]" style="color: gray;">
+    {{l.title}}
+    </p>
+    <h5 class="card-title w-75 text-uppercase">{{l.body}}</h5>
+    <p [routerLink]="['/author', l.Auther]" class="card-text m-2 text-uppercase" style="font-size: 13px;cursor: pointer; color: black; text-decoration: underline;">BY {{l.Auther}}</p>
+  </div>
+</div>
+}
+
+<!--
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L01.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Illustration</p>
+    <h5 class="card-title w-75 text-uppercase">Japan House opens in mountainside to foster peak creativity.</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Reta Torphy</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L02.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Photography</p>
+    <h5 class="card-title w-75 text-uppercase">Helmut Lang celebrates taxi drivers worldwide in latest campaign</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">ByAlessandra Ortiz</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L03.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Photography</p>
+    <h5 class="card-title w-75 text-uppercase">Bowlcut launch a new summer collection that pays homage to “UK legends”</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">ByRosanna Ondricka</p>
+  </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L04.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Photography</p>
+    <h5 class="card-title w-75 text-uppercase">Thousands of previously unseen photographs by Andy Warhol will be made public this Autumn</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Annie Lueilwitz</p>
+  </div>
+  </div>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L05.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Interactive Design</p>
+    <h5 class="card-title w-75 text-uppercase">London-based Yinka Ilori’s storytelling furniture</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Annie Lueilwitz</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L06.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Graphic Design</p>
+    <h5 class="card-title w-75 text-uppercase">Anonymous Israeli art collective Broken Fingaz direct music video for U2 and Beck</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Simeon Brekke</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L07.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Architecture</p>
+    <h5 class="card-title w-75 text-uppercase">Suzanne Saroff’s meticulously arranged photographs alter perceptions</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Reta Torphy</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L08.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Graphic Design</p>
+    <h5 class="card-title w-75 text-uppercase">Anu Ambasna’s playful illustrations celebrate club culture, brown bodies and perfect paunches</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">ByLeo Bartell</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L09.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Interactive Design</p>
+    <h5 class="card-title w-75 text-uppercase">Rudy Guedj’s design work sits between “figurative motives and their abstracted representations”</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Simeon Peterson</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L10.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Interactive Design</p>
+    <h5 class="card-title w-75 text-uppercase">How Alex Prager made the world stop and stare</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Michal Legros</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L11.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Animation</p>
+    <h5 class="card-title w-75 text-uppercase">New platform Holdframe offers animators’ full project files for others to download and explore</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Simeon Brekke</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L12.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Illustration</p>
+    <h5 class="card-title w-75 text-uppercase">Japan House opens in mountainside to foster peak creativity.</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Reta Torphy</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L13.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Illustration</p>
+    <h5 class="card-title w-75 text-uppercase">M&C Saatchi and Fontsmith collaborate on font collection for House of St Barnabas</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Annie Lueilwitz</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L14.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Photography</p>
+    <h5 class="card-title w-75 text-uppercase">Fred Rowson directs film for Years and Years</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Coby Gottlieb</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5" style=" border:none;">
+  <img src="L15.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Graphic Design</p>
+    <h5 class="card-title w-75 text-uppercase">Need a guide to LA’s graphic design scene? Shoplifters’ new issue has got your back</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Alessandra Ortiz</p>
+  </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-5 mb-5" style=" border:none;">
+  <img src="L16.png" class="card-img-top" alt="...">
+  <div class="card-body mt-3">
+    <p class="card-text text-uppercase" style="color: gray;">Graphic Design</p>
+    <h5 class="card-title w-75 text-uppercase">A Brief History of the FIFA World Cup Logo</h5>
+    <p class="card-text m-2 text-uppercase" style="font-size: 13px;">By Clem Onojeghuo</p>
+  </div>
+  </div> -->
+
+
+</div>
